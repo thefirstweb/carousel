@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>carousel base desktop</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <!--<link rel="stylesheet" type="text/css" href="dist/interest_b.css">-->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/interest.css">
+        <link rel="stylesheet" type="text/css" href="css/carousel.css">
+        <script src="js/carousel.js"></script>
+    </head>
+    <body>
+        <div id="bd">
+            <div id="carousel" class="mod_carousel">
+                <div class="mod_carousel_arrow_l" data-state="hide"></div>
+                <div class="mod_carousel_arrow_r" data-state="hide"></div>
+                <div class="mod_carousel_container">
+                    <ol class="mod_grid_layout pure-g">
+                        <!-- template -->
+                        <!--<li class="mod_carousel_list mod_grid_divider pure-u">-->
+                            <!--<a class="" href="" title="" target="_blank" rel="nofollow">-->
+                                <!--<div class="mod_grid_layout_content">-->
+                                    <!--<div class="mod_grid_layout_img">-->
+                                        <!--<img src="http://img.ltn.com.tw/Upload/ent/page/800/2017/06/08/php5heBFK.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div class="mod_grid_layout_info">-->
+                                        <!--<div class="container_top">-->
+                                            <!--<h4>名稱</h4>-->
+                                        <!--</div>-->
+                                        <!--<div class="container_bottom">-->
+                                            <!--<p>價格</p>-->
+                                            <!--<p>距離</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+         var count = 5,
+             hotelInterest = document.querySelectorAll('#carousel ol'),
+             template = '',
+             templateInterest = '<li class="mod_carousel_list mod_grid_divider pure-u">' +
+                                    '<a class="" href="" title="" target="_blank" rel="nofollow">' +
+                                        '<div class="mod_grid_layout_content">' +
+                                            '<div class="mod_grid_layout_img">' +
+                                                '<img src="http://img.ltn.com.tw/Upload/ent/page/800/2017/06/08/php5heBFK.jpg">' +
+                                            '</div>' +
+                                            '<div class="mod_grid_layout_info">' +
+                                                '<div class="container_top">' +
+                                                    '<h4>名稱</h4>' +
+                                                '</div>' +
+                                                '<div class="container_bottom">' +
+                                                    '<p>價格</p>' +
+                                                    '<p>距離</p>' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</div>' +
+                                    '</a>' +
+                                '</li>';
+
+        for (var x = 0; x < count; x++) {
+            template += templateInterest;
+        }
+        if (hotelInterest.length !== 0) {
+            hotelInterest[0].innerHTML = template;
+        }
+
+        if (document.getElementById('carousel')) {
+            var interestCarousel = new carousel({
+                dom: document.getElementById('carousel'),
+                viewCount: 4
+            });
+        }
+    </script>
+</html>

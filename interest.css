@@ -1,0 +1,57 @@
+.mod_carousel_container {
+    background: #fff;
+    border: 1px solid #aaa;
+}
+
+li .mod_grid_layout_img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 14px 0;
+}
+
+li .mod_grid_layout_img img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+}
+.mod_grid_divider:after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-right: var(--grid-divider);
+}
+
+li {
+    width: 200px;
+    padding : 4px 3px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mod_grid_layout_info h4 {
+    margin: 12px 0;
+    padding: 0 2px;
+}
+
+.mod_grid_layout li h4 {
+    font-weight: 700;
+    overflow: hidden;
+    height: 2.8em;
+    line-height: 1.4;
+    color: #1f1f1f;
+}
+.mod_grid_layout li a {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+}

@@ -1,0 +1,35 @@
+:root {
+    --theme-feebeego: #00b0f0;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: Microsoft JhengHei, calibri, arial, helvetica, monospace, clean, sans-serif !important;
+    /* font-family: 'Noto Sans TC', sans-serif !important; */
+}
+body {
+    /*min-width: var(--content-width);*/
+    position: relative;
+}
+
+ins {
+    text-decoration: none;
+}
+
+.vertical_middle:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both;
+}
