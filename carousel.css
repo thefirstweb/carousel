@@ -30,7 +30,7 @@
     background-color: #00b0f0;
     opacity: .8;
     left: 0;
-    background-image: url('../static/bg_arrow_left_1x.png?1111');
+    background-image: url('/static/bg_arrow_left_1x.png?1111');
     background-size: 19px 33px;
     background-repeat: no-repeat;
     background-position: center;
@@ -47,7 +47,7 @@
     background-color: #00b0f0;
     opacity: .8;
     right: 0;
-    background-image: url('../static/bg_arrow_right_1x.png?1111');
+    background-image: url('/static/bg_arrow_right_1x.png?1111');
     background-size: 19px 33px;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,11 +61,11 @@
         (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi),
         (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .mod_carousel .mod_carousel_arrow_l {
-        background-image: url('../static/bg_arrow_left_2x.png?1111');
+        background-image: url('/static/bg_arrow_left_2x.png?1111');
         background-size: 19px 33px;
     }
     .mod_carousel .mod_carousel_arrow_r {
-        background-image: url('../static/bg_arrow_right_2x.png?1111');
+        background-image: url('/static/bg_arrow_right_2x.png?1111');
         background-size: 19px 33px;
     }
 }
